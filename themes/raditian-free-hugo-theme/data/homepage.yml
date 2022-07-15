@@ -49,14 +49,12 @@ about:
   enable: true
   title: "Who am I?"
   content: '<p class="lead">
-    I am back, after a few days of vacationing with family. Weather was awesome, the beach was
-    full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as
-    good for all of you.
+    I could describe myself as someone pasioned about things. When something click with me
+    I had to know everthing about it or at least as much as posible. 
     </p>
     <p class="lead">
-    My area of focus lies in designing web and mobile products, user research as well as
-    leading of design & front-end teams. I enjoy designing and coding the UI as much as
-    talking with users to iterate and improve the experiences that reach business goals.
+    My area of focus lies in programing web products, althoug the Front-End is not my 
+    biggest strength I feel capasitate enough to satisfy the cliend expectenctions.
     </p>'
   button:
     icon: "icon-smile-fill"
@@ -71,23 +69,31 @@ education:
   enable: true
   title: "Education"
   items:
-    - university: "University of Waterloo"
-      year: "2012-2017"
+    - university: "Universidad Nacional de Colombia"
+      year: "2019-2025"
       degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
 
-    - university: "Sir John A Macdonald CI"
-      year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+    - university: "National Training Service"
+      year: "2013"
+      degree: "MODULOS, ESTRUCTURA DE ALMACENAMIENTO Y POO UTILIZANDO EL LENGUAJE DE PROGRAMACION C++ (NIVEL II)"
+
+    - university: "National Training Service"
+      year: "2013"
+      degree: "ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ (NIVEL I)"
+
+    - university: "National Training Service"
+      year: "2013"
+      degree: "METODOLOGIA DE LA PROGRAMACION DE SISTEMAS INFORMATICOS"
 
 # experience
 experience:
   enable: true
   title: "Experience"
-  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  description: "No real working experience. I had work on personal projects for about 2 years now."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
-    URL: "https://www.linkedin.com/company/radity/"
+    URL: "https://www.linkedin.com/in/ronald-cantillo-calderon-698bba1b9/"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
