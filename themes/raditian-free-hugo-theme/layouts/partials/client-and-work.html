@@ -33,30 +33,30 @@
         <p class="lead">
           {{ .description }}
         </p>
-        <a href="{{ .button.URL | absURL }}" class="btn btn-primary"
+        <a href="{{ .button.URL | absURL }}" class="btn btn-primary" target="_blank"
           >{{ .button.btnText }}<i class="{{ .button.icon }}"></i
         ></a>
       </div>
       <div class="col-12 col-md-7 pl-md-0 text-right">
         <iframe
-          class='lozad img-responsive {{ cond (eq ( mod $index 4) 0) "img-clip-left-backward" "img-clip-left-forward" }}'
+          class='lozad   '
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
           data-src="{{ .image.x | absURL }}"
-          width="640" 
+          width="100%" 
           height="370"
-          allow="fullscreen"
+          allowfullscreen
           data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
           alt="{{ .title }}"
         ></iframe>
       </div>
       {{ else }}
-      <div class="col-13 col-md-7 pl-md-0 text-right">
+      <div class="col-12 col-md-7 pl-md-0 text-left">
         <iframe
-          class='lozad img-responsive {{ cond (eq ( mod $index 4) 1)  "img-clip-right-backward" "img-clip-right-forward" }}'
+          class='lozad '
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          width="640" 
+          width="100%" 
           height="370"
-          allow="fullscreen"
+          allowfullscreen
           data-src="{{ .image.x | absURL }}"
           data-srcset="{{ .image.x | absURL }} 1x, {{ .image._2x | absURL }} 2x"
           alt="{{ .title }}"
@@ -67,7 +67,7 @@
         <p class="lead">
           {{ .description }}
         </p>
-        <a href="{{ .button.URL | absURL }}" class="btn btn-primary"
+        <a href="{{ .button.URL | absURL }}" class="btn btn-primary" target="_blank"
           >{{ .button.btnText }}<i class="{{ .button.icon }}"></i
         ></a>
       </div>
