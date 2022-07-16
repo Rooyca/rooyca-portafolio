@@ -1,6 +1,13 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="description" content="{{ .Site.Params.meta.description }}"/>
+<meta name="keywords" content="{{ .Site.Params.meta.keywords }}"/>
+<meta name="author" content="{{ .Site.Params.meta.author }}"/>
+<meta name="robots" content="{{ .Site.Params.meta.robots }}"/>
+<!-- icon -->
+<link rel="icon" href="{{ .Site.Params.logo.favicon }}" type="image/x-icon"/>
+
 <!-- Google Tag Manager -->
 <script>
     (function (w, d, s, l, i) {
@@ -20,7 +27,7 @@
 </script>
 <!-- End Google Tag Manager -->
 <!-- endinject -->
-<title>{{ .Site.Data.homepage.head.title }}</title>
+<title>{{ .Site.Params.title }}</title>
 <style>
     /* Fade In animation triggering after font load or 3s timeout */
     .rad-fade-in {

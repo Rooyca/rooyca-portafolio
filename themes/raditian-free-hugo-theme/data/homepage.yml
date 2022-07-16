@@ -1,10 +1,14 @@
+# homepage
+homepage:
+  head:
+    title: "Home | Raditian"
 # showcase
 showcase:
   enable: true
   title: "Hello, I’m Rooyca."
   subtitle: "Full-stack Developer"
-  description: "I love building things, learning new stuff and improving in general. I believe two of my strengths are curiosity and really fast-learnering.  
-               You can check some of my projects at <a target='_blank' href='https://github.com/rooyca'>Github</a>."
+  description: "I love building things, learning new stuff and improving in general. 
+              I believe two of my strengths are curious and really fast-learner. You can check some of my projects at <a target='_blank' href='https://github.com/rooyca'>Github</a>."
   image:
     x: "img/showcase/showcase.png"
     _2x: "img/showcase/showcase@2x.png"
@@ -14,7 +18,7 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "#contact"
+    URL: "http://localhost:1313/#contact"
 
   socialLinks:
     - icon: "linkedin"
@@ -26,35 +30,21 @@ showcase:
     - icon: "twitter"
       URL: "https://twitter.com/rrooyca"
 
-    - icon: "behance"
-      URL: "#"
-
     - icon: "youtube"
-      URL: "#"
+      URL: "https://www.youtube.com/c/RoycaR3"
 
-    - icon: "instagram"
-      URL: "#"
-
-    - icon: "facebook"
-      URL: "#"
-
-    - icon: "codepen"
-      URL: "#"
-
-    - icon: "yelp"
-      URL: "#"
 
 # about
 about:
   enable: true
   title: "Who am I?"
   content: '<p class="lead">
-    I could describe myself as someone pasioned about things. When something click with me
-    I had to know everthing about it or at least as much as posible. 
+    I could describe myself as someone passionate about things. 
+    When something clicks with me I had to know everything about it or at least as much as possible. 
     </p>
     <p class="lead">
-    My area of focus lies in programing web products, althoug the Front-End is not my 
-    biggest strength I feel capasitate enough to satisfy the cliend expectenctions.
+    My area of focus lies in programing web products, although the Front-End is not my biggest strength 
+    I feel capacitated enough to achieve the client expectations.
     </p>'
   button:
     icon: "icon-smile-fill"
@@ -69,21 +59,21 @@ education:
   enable: true
   title: "Education"
   items:
-    - university: "Universidad Nacional de Colombia"
+    - university: "National University of Colombia"
       year: "2019-2025"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
+      degree: "Linguistic"
 
     - university: "National Training Service"
       year: "2013"
-      degree: "MODULOS, ESTRUCTURA DE ALMACENAMIENTO Y POO UTILIZANDO EL LENGUAJE DE PROGRAMACION C++ (NIVEL II)"
+      degree: "Modules, storage structure and poo using C++ programming language (level II)"
 
     - university: "National Training Service"
       year: "2013"
-      degree: "ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ (NIVEL I)"
+      degree: "C++ programming language structure (level I)"
 
     - university: "National Training Service"
       year: "2013"
-      degree: "METODOLOGIA DE LA PROGRAMACION DE SISTEMAS INFORMATICOS"
+      degree: "Computer systems programming methodology"
 
 # experience
 experience:
@@ -114,72 +104,161 @@ experience:
 
 # Client & Work
 client_and_work:
-  title: "Clients & Works"
+  title: "Languages and Tools"
   enable: true
 
   clients:
     - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
+        x: "img/clients/vuejs-1.png"
+        _2x: "img/clients/vuejs-1@2x.png"
+      alt: "Vuejs"
 
     - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
+        x: "img/clients/boots-1.png"
+        _2x: "img/clients/boots-1@2x.png"
+      alt: "Bootstrap"
 
     - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
-      alt: "Goldline"
+        x: "img/clients/python-1.png"
+        _2x: "img/clients/python-1@2x.png"
+      alt: "Python"
 
     - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
-      alt: "Kanba"
+        x: "img/clients/css-1.png"
+        _2x: "img/clients/css-1@2x.png"
+      alt: "CSS"
 
     - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
-      alt: "Zoo"
+        x: "img/clients/html-1.png"
+        _2x: "img/clients/html-1@2x.png"
+      alt: "HTML"
 
     - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
-      alt: "Ztos"
+        x: "img/clients/js-1.png"
+        _2x: "img/clients/js-1@2x.png"
+      alt: "Javascript"
 
+    - logo:
+        x: "img/clients/firebase-1.png"
+        _2x: "img/clients/firebase-1@2x.png"
+      alt: "Firebase"
+
+    - logo:
+        x: "img/clients/heroku-1.png"
+        _2x: "img/clients/heroku-1@2x.png"
+      alt: "Heroku"
+
+    - logo:
+        x: "img/clients/docker-1.png"
+        _2x: "img/clients/docker-1@2x.png"
+      alt: "Docker"
+
+    - logo:
+        x: "img/clients/linux-1.png"
+        _2x: "img/clients/linux-1@2x.png"
+      alt: "Linux"
+
+    - logo:
+        x: "img/clients/git-1.png"
+        _2x: "img/clients/git-1@2x.png"
+      alt: "Git"
+
+    - logo:
+        x: "img/clients/rabbitmq-1.png"
+        _2x: "img/clients/rabbitmq-1@2x.png"
+      alt: "RabbitMQ"
+
+    - logo:
+        x: "img/clients/flask-1.png"
+        _2x: "img/clients/flask-1@2x.png"
+      alt: "Flask"
+
+    - logo:
+        x: "img/clients/xampp-1.png"
+        _2x: "img/clients/xampp-1@2x.png"
+      alt: "Xampp"
+
+    - logo:
+        x: "img/clients/c++-1.png"
+        _2x: "img/clients/c++-1@2x.png"
+      alt: "C++"
+
+    - logo:
+        x: "img/clients/bash-1.png"
+        _2x: "img/clients/bash-1@2x.png"
+      alt: "Bash"
+
+    - logo:
+        x: "img/clients/celery-1.png"
+        _2x: "img/clients/celery-1@2x.png"
+      alt: "Celery"
+
+    - logo:
+        x: "img/clients/scrapy-1.png"
+        _2x: "img/clients/scrapy-1@2x.png"
+      alt: "Scrapy"
+
+    - logo:
+        x: "img/clients/hugo-1.png"
+        _2x: "img/clients/hugo-1@2x.png"
+      alt: "Hugo"
+
+    - logo:
+        x: "img/clients/fastapi-1.png"
+        _2x: "img/clients/fastapi-1@2x.png"
+      alt: "Fastapi"
+
+    - logo:
+        x: "img/clients/mongodb-1.png"
+        _2x: "img/clients/mongodb-1@2x.png"
+      alt: "MongoDB"
+
+    - logo:
+        x: "img/clients/gcloud-1.png"
+        _2x: "img/clients/gcloud-1@2x.png"
+      alt: "Google CLoud"
+
+    - logo:
+        x: "img/clients/mysql-1.png"
+        _2x: "img/clients/mysql-1@2x.png"
+      alt: "MySQL"
+
+    - logo:
+        x: "img/clients/post-1.png"
+        _2x: "img/clients/post-1@2x.png"
+      alt: "PostgreSQL"
   works:
-    - title: "Radity Finance - UI Kit"
-      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+    - title: "PDF Reader - Ankla Digital"
+      description: "An aesthetic PDF viewer in the browser with the option to download it and chat directly with the client via WhatsApp."
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        btnText: "Go to"
+        URL: "https://portafolio.ankladigital.com"
       image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
+        x: "https://youtube.com/embed/8g031-_AinE"
+        _2x: "https://youtube.com/embed/8g031-_AinE"
       is_even: true
 
-    - title: "Swiss Fintech Website"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    - title: "Finance"
+      description: "A personal project that was built with organization in mind. I needed something where I could keep register of my expenses so I build Finance."
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        btnText: "Go to"
+        URL: "https://finance.rooyca.xyz"
       image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
+        x: "https://youtube.com/embed/9mC_DjqJgyk"
+        _2x: "https://youtube.com/embed/9mC_DjqJgyk"
       is_even: false
 
-    - title: "Robo Advisor"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    - title: "List to JSON"
+      description: "A personal project where you can convert your Letterbox list (or any list) to a JSON with all the information about the movies in that list."
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
+        btnText: "Go to"
+        URL: "https://list.rooyca.xyz"
       image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
+        x: "https://youtube.com/embed/8LydMx_lees"
+        _2x: "https://youtube.com/embed/8LydMx_lees"
       is_even: true
 
 # testimonial
@@ -189,21 +268,21 @@ testimonial:
   items:
     - name: "Daniel Jordan"
       position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, magna eget convallis consequat, risus justo vestibulum enim, id placerat lacus urna a tellus."
       image:
         x: "img/testimonials/daniel-jordan.jpg"
         _2x: "img/testimonials/daniel-jordan@2x.jpg"
 
     - name: "Jonathan Peters"
       position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      content: "Etiam congue accumsan ullamcorper. Maecenas eu auctor nulla, ac mollis elit. Sed fringilla, nibh et pellentesque consectetur, enim libero egestas erat, vel tristique elit lacus in felis."
       image:
         x: "img/testimonials/jonathan-peters.jpg"
         _2x: "img/testimonials/jonathan-peters@2x.jpg"
 
     - name: "Antonio Willis"
       position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      content: "Nam venenatis fermentum egestas. Vivamus condimentum dignissim metus eget rutrum. Suspendisse magna tortor, imperdiet eget hendrerit quis, elementum ac libero."
       image:
         x: "img/testimonials/antonio-willis.jpg"
         _2x: "img/testimonials/antonio-willis@2x.jpg"
@@ -219,13 +298,13 @@ contact:
     message: "Type Your Message Here"
   phone:
     title: "Phone Number"
-    number: "+41 (44) 505 10 99"
+    number: "+57 (XXX) XXX XX XX"
   email:
     title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+    email: '<a href="mailto:admin@rooyca.xyz">admin@rooyca.xyz</a>'
   address:
     title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    address: "Colombia"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"

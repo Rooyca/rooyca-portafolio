@@ -1,4 +1,4 @@
-baseURL = "https://raditian-hugo.radity.com/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 
@@ -63,12 +63,13 @@ theme = "raditian-free-hugo-theme"
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
+
   [params.logo]
     text1 = "Andreas"
     text2 = "Ellure"
 
   [params.footer]
-      copyright = "© Raditian. All rights reserved."
+      copyright = "© Rooyca. All rights reserved."
       [params.footer.radity_logo]
         x = "img/general/design-and-code-radity.png"
         _2x = "img/general/design-and-code-radity@2x.png"

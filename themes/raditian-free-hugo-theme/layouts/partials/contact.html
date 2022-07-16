@@ -24,7 +24,7 @@
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" onclick="event.preventDefault(); sendEmail()">
                                     <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
                                     {{ .Site.Data.homepage.contact.button.btnText }}
                                 </button>
@@ -43,5 +43,39 @@
             </div>
         </div>
     </div>
+    <script>
+        function sendEmail() {
+            var full_name = document.getElementById('full_name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Validate email
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (!re.test(String(email).toLowerCase())) {
+                alert('Email is not valid');
+                return false;
+            }
+
+            if (full_name == '' || email == '' || message == '') {
+                alert('Please fill all fields');
+                return false;
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://127.0.0.1:8000/new/message', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Message sent');
+                }
+            };
+            xhr.send(JSON.stringify({
+                'full_name': full_name,
+                'email': email,
+                'message': message
+            }));
+
+        }
+    </script>
 </section>
 {{ end }}

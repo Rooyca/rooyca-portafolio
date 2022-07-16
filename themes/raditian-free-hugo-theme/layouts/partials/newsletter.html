@@ -14,7 +14,7 @@
             placeholder="Email Address..."
             aria-label="Email Address"
           />
-          <button type="submit" id="rad-subscription-submit" class="btn btn-light btn-rounded">
+          <button type="submit" id="rad-subscription-submit" class="btn btn-light btn-rounded" onclick="event.preventDefault(); subscribe()">
             Sign Up
           </button>
         </form>
@@ -32,5 +32,33 @@
     </div>
   </div>
 </div>
+<script>
+  function subscribe() {
+      var email = document.getElementById('rad-subscription-email').value;
+      console.log(email);
+
+      // Validate email
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!re.test(String(email).toLowerCase())) {
+          alert('Email is not valid');
+          return false;
+      }
+
+      if (email == '') {
+          alert('Field cannot be empty');
+          return false;
+      }
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'http://127.0.0.1:8000/new/subscribe', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+              alert('Subscribed successfully');
+          }
+      };
+      xhr.send(JSON.stringify({ email: email }));
+  }
+</script>
 </section>
 {{ end }}
